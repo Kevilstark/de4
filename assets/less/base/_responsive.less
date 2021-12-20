@@ -1,0 +1,63 @@
+@media all and (max-width: 1170px) {
+    .header {
+        padding: 0 0;
+        &-inner {
+            padding: 0 0;
+            .mobile-menu-bar {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+
+                
+                line-height: 28px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Poppins";
+                .menu-icon {
+                    font-size: 30px;
+                    padding: 14px 0;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: @bg-color;
+                    font-size: 16px;
+                    &> li {
+                        padding: 5px 5px;
+                    }
+                }
+                &:hover {
+                    .dropdown-content {
+                        display: block;
+                    }
+                }
+            }
+            .menu-bar-right {
+                padding: 19.8px 0;
+                &> li {
+                    display: inline-block;
+                    
+                    margin-left: 25px;
+                }
+            }
+            
+            .menu-bar {
+                display: none;
+            }
+        }
+        
+    }
+    
+}
+@media all and (max-width: 1024px) {
+
+}
+@media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 576px) {
+
+}
+@media all and (max-width: 375px) {
+
+}
