@@ -149,17 +149,13 @@
 }
 .slick-dots li button
 {
-    font-size: 0;
+    font-size: 100;
     line-height: 0;
-
     display: block;
-
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
-
     cursor: pointer;
-
     color: transparent;
     border: 0;
     outline: none;
@@ -180,20 +176,14 @@
     font-family: 'slick';
     font-size: 6px;
     line-height: 20px;
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 20px;
     height: 20px;
-
     content: '•';
     text-align: center;
-
     opacity: .25;
-    color: black;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

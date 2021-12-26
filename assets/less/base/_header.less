@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     position: fixed;
+    z-index: 4;
     background-color: @bg-color;
     padding: 21px 0;
     .mobile-menu-bar {
@@ -21,15 +22,15 @@
                 &> a {
                     font-size: 16px;
                     line-height: 28px;
-                    color: #ffffff;
+                    color: @ft-color;
                     font-weight: 400;
-                    font-family: "Poppins";
+                    font-family: "Poppins-Regular";
                     text-align: center;
                 }
             }
         }
         .menu-bar-right {
-            color: #777777;
+            color: @dcr-color;
             font-size: 16px;
             padding: 15px 0;
             &> li {
@@ -38,7 +39,7 @@
                 margin-left: 25px;
                 &> a {
                     
-                    color: #ffffff;
+                    color: @ft-color;
                     font-weight: 400;
                 }
         

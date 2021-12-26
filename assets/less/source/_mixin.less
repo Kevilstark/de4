@@ -1,4 +1,11 @@
-.flex (@width) {
+.row () {
     display: flex;
-    
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col (@att) {
+    width: @att;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 15px 0;
 }
