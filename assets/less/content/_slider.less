@@ -10,53 +10,55 @@
         object-position: center;
         
     }
-    &-content {
+    .slider-content-wrap {
         position: absolute;
         z-index: 2;
         top: 30%;
-        left:0;
-        right:0;
-        
-        .title {
-            font-size: 60px;
-            color: @ft-color;
-            font-weight: 700;
-            font-family: "Poppins-Bold";
+        left: 0;
+        right: 0;
+        .slider-content {                
+            .title {
+                font-size: 60px;
+                color: @ft-color;
+                font-weight: 700;
+                font-family: "Poppins-Bold";
+            }
+            .title2 {
+                font-size: 40px;
+                color: @ft-color;
+                font-weight: 700;
+                font-family: "Poppins-Bold";
+    
+            }
+            .decription {
+                max-width: 532px;
+                max-height: 60px;
+                font-size: 14px;
+                line-height: 24px;
+                color: @ft-color;
+                font-weight: 400;
+                font-family: "Poppins-Regular";
+            }
+            
+            .shop-btn {
+                font-size: 14px;
+                line-height: 24px;
+                box-sizing: border-box;
+                color: @ft-color;
+                font-weight: 400;
+                font-family: "Poppins-Regular";
+                text-align: center;
+                padding: 12px 45px;
+                display: inline-block;
+                cursor: pointer;
+                border-style: solid;
+                border-color: @ft-color;
+            }
+            
+            
         }
-        .title2 {
-            font-size: 40px;
-            color: @ft-color;
-            font-weight: 700;
-            font-family: "Poppins-Bold";
-
-        }
-        .decription {
-            max-width: 532px;
-            max-height: 60px;
-            font-size: 14px;
-            line-height: 24px;
-            color: @ft-color;
-            font-weight: 400;
-            font-family: "Poppins-Regular";
-        }
-        
-        .shop-btn {
-            font-size: 14px;
-            line-height: 24px;
-            box-sizing: border-box;
-            color: @ft-color;
-            font-weight: 400;
-            font-family: "Poppins-Regular";
-            text-align: center;
-            padding: 20px 47px;
-            display: inline-block;
-            cursor: pointer;
-            border-style: solid;
-            border-color: @ft-color;
-        }
-        
-        
     }
+    
     
 }
 

@@ -27,7 +27,7 @@ ul li {
   list-style: none;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: auto;
@@ -54,7 +54,7 @@ footer .social-icon {
   display: inline-block;
 }
 footer .social-icon > a {
-  margin: 0 20px;
+  margin: 0 23px;
   font-size: 16px;
   padding: 15px 0;
   color: #777777;
@@ -92,14 +92,14 @@ footer .about-us-col .about-us-dec > a {
   font-family: "Poppins-Regular";
 }
 footer .about-us .contact-us .about-us-dec > a {
-  margin-left: 18px;
+  margin-left: 16px;
 }
 .header {
   width: 100%;
   position: fixed;
   z-index: 4;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 21px 0;
+  padding: 18px 0;
 }
 .header .mobile-menu-bar {
   display: none;
@@ -114,8 +114,8 @@ footer .about-us .contact-us .about-us-dec > a {
 }
 .header-inner .menu-bar > li {
   display: inline-block;
-  margin-left: 26px;
-  margin-right: 26px;
+  margin-right: 34px;
+  margin-left: 14px;
   align-items: center;
 }
 .header-inner .menu-bar > li > a {
@@ -129,11 +129,11 @@ footer .about-us .contact-us .about-us-dec > a {
 .header-inner .menu-bar-right {
   color: #777777;
   font-size: 16px;
-  padding: 15px 0;
+  padding: 18px 0;
 }
 .header-inner .menu-bar-right > li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 22px;
 }
 .header-inner .menu-bar-right > li > a {
   color: #ffffff;
@@ -142,8 +142,9 @@ footer .about-us .contact-us .about-us-dec > a {
 .category-product-inner {
   display: flex;
   flex-flow: row;
-  margin-top: -78px;
+  margin-top: -85px;
   box-shadow: 0px 0px 6px #000000;
+  width: 100%;
 }
 .category-product-inner .category {
   z-index: 2;
@@ -167,9 +168,8 @@ footer .about-us .contact-us .about-us-dec > a {
   width: 100%;
 }
 .category-product-inner .category-banner img {
-  margin-top: 10%;
-  width: 70px;
-  height: 54px;
+  margin-top: 7%;
+  height: 70px;
 }
 .category-product-inner .category-banner-content {
   margin-top: 5%;
@@ -239,23 +239,15 @@ footer .about-us .contact-us .about-us-dec > a {
 .product-list-inner .product-show .tabs .product-inner {
   position: relative;
   box-sizing: border-box;
-  text-align: center;
   height: 100%;
   width: 100%;
 }
 .product-list-inner .product-show .tabs .product-inner img {
+  text-align: center;
   width: 100%;
 }
 .product-list-inner .product-show .tabs .product-inner .product-btn-list {
   display: none;
-}
-.product-list-inner .product-show .tabs .product-inner .product-title {
-  margin-top: 25px;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000000;
-  font-weight: 400;
-  font-family: "Poppins-Regular";
 }
 .product-list-inner .product-show .tabs .product-inner:hover {
   box-shadow: 0px 0px 6px #000000;
@@ -286,8 +278,18 @@ footer .about-us .contact-us .about-us-dec > a {
   background-color: #dd2f31;
   border-color: #dd2f31;
 }
+.product-list-inner .product-show .tabs .product-inner .product-title {
+  margin-top: 25px;
+  margin-left: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Poppins-Regular";
+}
 .product-list-inner .product-show .tabs .product-inner .price {
   margin-top: 5px;
+  margin-left: 25px;
   margin-bottom: 34px;
   font-size: 14px;
   line-height: 24px;
@@ -317,6 +319,15 @@ footer .about-us .contact-us .about-us-dec > a {
   margin: 15px 0;
   text-align: center;
 }
+.copy-right {
+  text-align: center;
+  background-color: black;
+  font-size: 14px;
+  line-height: 30px;
+  color: #777777;
+  font-weight: 400;
+  font-family: "Poppins-Regular";
+}
 .slider {
   width: 100%;
   overflow: hidden;
@@ -329,26 +340,26 @@ footer .about-us .contact-us .about-us-dec > a {
   object-fit: cover;
   object-position: center;
 }
-.slider-content {
+.slider .slider-content-wrap {
   position: absolute;
   z-index: 2;
   top: 30%;
   left: 0;
   right: 0;
 }
-.slider-content .title {
+.slider .slider-content-wrap .slider-content .title {
   font-size: 60px;
   color: #ffffff;
   font-weight: 700;
   font-family: "Poppins-Bold";
 }
-.slider-content .title2 {
+.slider .slider-content-wrap .slider-content .title2 {
   font-size: 40px;
   color: #ffffff;
   font-weight: 700;
   font-family: "Poppins-Bold";
 }
-.slider-content .decription {
+.slider .slider-content-wrap .slider-content .decription {
   max-width: 532px;
   max-height: 60px;
   font-size: 14px;
@@ -357,7 +368,7 @@ footer .about-us .contact-us .about-us-dec > a {
   font-weight: 400;
   font-family: "Poppins-Regular";
 }
-.slider-content .shop-btn {
+.slider .slider-content-wrap .slider-content .shop-btn {
   font-size: 14px;
   line-height: 24px;
   box-sizing: border-box;
@@ -365,7 +376,7 @@ footer .about-us .contact-us .about-us-dec > a {
   font-weight: 400;
   font-family: "Poppins-Regular";
   text-align: center;
-  padding: 20px 47px;
+  padding: 12px 45px;
   display: inline-block;
   cursor: pointer;
   border-style: solid;
