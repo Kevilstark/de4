@@ -94,9 +94,6 @@ footer .about-us-col .about-us-dec > a {
 footer .about-us .contact-us .about-us-dec > a {
   margin-left: 16px;
 }
-.nav-content {
-  display: none;
-}
 .header {
   width: 100%;
   position: fixed;
@@ -104,24 +101,24 @@ footer .about-us .contact-us .about-us-dec > a {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 18px 0;
 }
+.header .mobile-menu-bar {
+  display: none;
+}
 .header-inner {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
-.header-inner .menu-bar-wrapper .menu-icon {
-  display: none;
-}
-.header-inner .menu-bar-wrapper .menu-bar {
+.header-inner .menu-bar {
   padding: 15px 0;
 }
-.header-inner .menu-bar-wrapper .menu-bar > li {
+.header-inner .menu-bar > li {
   display: inline-block;
   margin-right: 34px;
   margin-left: 14px;
   align-items: center;
 }
-.header-inner .menu-bar-wrapper .menu-bar > li > a {
+.header-inner .menu-bar > li > a {
   font-size: 16px;
   line-height: 28px;
   color: #ffffff;
@@ -443,25 +440,12 @@ footer .about-us .contact-us .about-us-dec > a {
 }
 @media all and (max-width: 1170px) {
   .header {
-    z-index: 5;
     padding: 0 0;
   }
   .header-inner {
     padding: 0 0;
   }
-  .header-inner .logo {
-    order: 1;
-  }
-  .header-inner .menu-bar-right {
-    order: 2;
-    padding: 19.8px 0;
-  }
-  .header-inner .menu-bar-right > li {
-    display: inline-block;
-    margin-left: 25px;
-  }
-  .header-inner .menu-bar-wrapper {
-    position: relative;
+  .header-inner .mobile-menu-bar {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -469,42 +453,37 @@ footer .about-us .contact-us .about-us-dec > a {
     color: #ffffff;
     font-weight: 400;
     font-family: "Poppins-Regular";
-    order: 0;
   }
-  .header-inner .menu-bar-wrapper .menu-icon {
-    display: block;
-    height: 100%;
+  .header-inner .mobile-menu-bar .menu-icon {
     font-size: 30px;
     padding: 14px 0;
   }
-  .header-inner .menu-bar-wrapper .menu-bar {
+  .header-inner .mobile-menu-bar .dropdown-content {
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 5;
     background-color: #ffffff;
-    left: 0;
-    height: 100vh;
-    width: 50vw;
-    margin-left: 0;
+    font-size: 16px;
+    width: 80%;
   }
-  .header-inner .menu-bar-wrapper .menu-bar li {
-    margin: 0;
-    border-bottom: 2px solid #000000;
+  .header-inner .mobile-menu-bar .dropdown-content > li {
+    padding: 5px 5px;
   }
-  .header-inner .menu-bar-wrapper .menu-bar li a {
-    color: #000000;
-    padding: 10px 5px;
+  .header-inner .mobile-menu-bar:hover .dropdown-content {
     display: block;
   }
-  .header-inner .menu-bar-wrapper:hover .menu-bar {
-    display: flex;
-    flex-flow: column;
+  .header-inner .menu-bar-right {
+    padding: 19.8px 0;
+  }
+  .header-inner .menu-bar-right > li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  .header-inner .menu-bar {
+    display: none;
   }
 }
 @media all and (max-width: 1024px) {
-  .slider img {
-    object-position: -570px 50%;
-  }
   .category-product-inner {
     flex-flow: column;
   }
@@ -550,9 +529,6 @@ footer .about-us .contact-us .about-us-dec > a {
   }
 }
 @media all and (max-width: 768px) {
-  .slider img {
-    object-position: -820px 50%;
-  }
   .category-product-inner {
     flex-flow: column;
   }
@@ -578,9 +554,6 @@ footer .about-us .contact-us .about-us-dec > a {
   }
 }
 @media all and (max-width: 576px) {
-  .slider img {
-    object-position: -1020px 50%;
-  }
   .header-inner .menu-bar-right {
     padding: 19.8px 0;
   }
@@ -632,9 +605,6 @@ footer .about-us .contact-us .about-us-dec > a {
   }
 }
 @media all and (max-width: 375px) {
-  .slider img {
-    object-position: -1165px 50%;
-  }
   .product-list-inner .product-show .tabs .product-inner:hover .product-btn-list {
     left: 80%;
     top: 5px;

@@ -1,34 +1,42 @@
+.nav-content{
+    display: none;
+}
+
+
 .header {
     width: 100%;
     position: fixed;
     z-index: 4;
     background-color: @bg-color;
     padding: 18px 0;
-    .mobile-menu-bar {
-        display: none;
-    }
     &-inner {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
-        .menu-bar {
-            padding: 15px 0;
-            &> li {
-                display: inline-block;
-                
-                margin-right: 34px;
-                margin-left: 14px;
-                align-items: center;
-                &> a {
-                    font-size: 16px;
-                    line-height: 28px;
-                    color: @ft-color;
-                    font-weight: 400;
-                    font-family: "Poppins-Regular";
-                    text-align: center;
+        .menu-bar-wrapper{
+            .menu-icon {
+                display: none;
+            }
+            .menu-bar {
+                padding: 15px 0;
+                &> li {
+                    display: inline-block;
+                    
+                    margin-right: 34px;
+                    margin-left: 14px;
+                    align-items: center;
+                    &> a {
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: @ft-color;
+                        font-weight: 400;
+                        font-family: "Poppins-Regular";
+                        text-align: center;
+                    }
                 }
             }
         }
+        
         .menu-bar-right {
             color: @dcr-color;
             font-size: 16px;
